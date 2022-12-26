@@ -1,0 +1,63 @@
+@import "./variables";
+@import "./libs/normalize";
+@import "./components/all";
+html,
+body{
+    height: 100%;
+    background-color: $background;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.content{
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__catalog{
+    min-width: 170px;
+  }
+  &__catalog-title{
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  &__catalog-list{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    a{
+      cursor: pointer;
+    }  
+    &--active{
+      font-weight: 300;
+      a{
+        cursor: default;
+      }
+    }
+  }
+  &__block{
+    width: 975px;
+  }
+  &__block-product{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__items{
+    margin: 0 0 30px 15px;
+  }
+}

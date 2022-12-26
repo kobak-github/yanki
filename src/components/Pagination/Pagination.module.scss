@@ -1,0 +1,39 @@
+@import "../../scss/variables";
+
+.root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li{
+    margin-right: 20px;
+
+    
+  }
+
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;    
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: 1px solid $black;
+    transition: all .3s;
+    &:hover{
+      background-color: $main;
+      border: 1px solid $main;
+      color: #fff;
+    }    
+  }
+}
+:global {
+  .selected{
+   a{
+    background-color: $main;
+    border: 1px solid $main;
+    color: #fff;
+    cursor: default;
+   }
+  }
+}

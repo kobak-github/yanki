@@ -1,0 +1,92 @@
+@import "../variables";
+
+.header{
+  padding: 25px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon-catalog{
+    width: 34px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    cursor: pointer;
+  }
+  &__icon-top{
+    width: 34px;
+    height: 4px;
+    background-color: $main;
+  }
+  &__icon-center{
+    width: 26px;
+    height: 4px;
+    background-color: $main;
+  }
+  &__icon-bottom{
+    width: 18px;
+    height: 4px;
+    background-color: $main;
+  }
+
+  &__nav-lists{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav-link{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: $black;
+    cursor: pointer;
+    &:hover{
+      color: $main;
+    }
+  }
+  &__logo-link{
+    cursor: pointer;
+  }
+  &__search-block{
+    width: 300px;
+    position: relative;
+  }
+  &__search-img{
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    opacity: .5;
+  }
+  input{
+    width: 300px;
+    padding: 8px 50px;
+    border: 0.1px solid $black;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    &::placeholder{
+      font-weight: 200;
+    }
+  }
+  &__search-clear{
+    position: absolute;
+    right: 17px;
+    top: 9px;
+    opacity: .5;
+    cursor: pointer;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &__icon-link{
+    cursor: pointer;
+    margin-left: 30px;
+  }
+}

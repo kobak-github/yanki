@@ -1,0 +1,35 @@
+@import "../variables";
+
+.cart{
+  padding: 30px 0;
+  &__title{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  &__items{
+    padding: 20px 0;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 0.3px solid $black;
+  }
+  &__block-title{
+    height: 110px;
+  }
+  &__item-art{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: $main;
+    margin-bottom: 29px;
+  }
+  &__item-title{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
